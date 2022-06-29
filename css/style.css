@@ -1,0 +1,272 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.w-30{
+        width: 33.3%;
+}
+
+body {
+        font-family: 'Roboto', sans-serif;
+}
+
+#login-section {
+        padding: 100px 0;
+}
+
+#login-section h1 {
+        font-size: 38px;
+        font-weight: 500;
+        color: #212529;
+        text-align: center;
+}
+
+#login-section .wraper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+}
+
+#login-section .form-section {
+        margin-top: 50px;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px grey;
+        width: 35%;
+        position: relative;
+}
+
+#login-section .form-section h3 {
+        margin-bottom: 15px;
+        font-size: 25px;
+        font-weight: 500;
+        color: #212529;
+} 
+
+#login-section .name-section {
+        width: 40%;
+        text-align: center;
+}
+
+#login-section .name-section img {
+        width: 40%;
+        margin-top: 30px;
+}
+
+#login-section .form-section input[type="email"],
+#login-section .form-section input[type="password"] {
+        display: block;
+        width: 100%;
+        padding: 5px 10px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        border: 1px solid #ced4da;
+        border-radius: 6px;
+        transition: all .2s;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+}
+
+#login-section .form-section input[type="email"]:focus,
+#login-section .form-section input[type="password"]:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 .2rem rgba(152, 196, 243, 0.25);
+}
+
+#login-section .form-section input[type="email"]:invalid,
+#login-section .form-section input[type="password"]:invalid{
+        border-color: #e22424;
+        outline: 0;
+        box-shadow: 0 0 0 .2rem rgba(255, 0, 0, 0.25);
+}
+
+#login-section .form-section #login {
+         color: #fff;
+        background-color: #28a745;
+        display: inline-block;
+        font-weight: 400;
+        border: 1px solid #28a745;
+        padding: 8px 12px;
+        font-size: 15px;
+        border-radius: 6px;
+        transition: all .2s;
+        cursor: pointer;  
+        outline: none; 
+}
+
+#login-section .form-section #login:hover {
+        background-color: #218838;
+        border-color: #1e7e34;
+}
+
+#login-section .form-section #login:focus {
+        box-shadow: 0 0 0 .2rem rgba(72,180,97,.5);
+}
+
+/* ACCOUNT SECTION IS STARTED */
+#account-section {
+        display: none;
+        padding: 65px 0;
+}
+
+.wraper-two {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        width: 85%;
+        margin: auto;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+}
+
+.diposit-box {
+    background-image: linear-gradient(to right, #5644ca, #6a5cc3);
+    padding: 23px;
+    box-sizing: border-box;
+    margin: 0 30px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.credit-box {
+    background-image: linear-gradient(to right, #fd8758, #ffad8d);
+    padding: 23px;
+    box-sizing: border-box;
+    margin: 0 30px;
+    color: #fff;
+        border-radius: 10px;
+}
+
+.total-blns {
+        background-image: linear-gradient(to right, #ffa500, #ffbd43);
+        background-color: orange;
+        padding: 23px;
+        box-sizing: border-box;
+        margin: 0 30px;
+        color: #fff;
+        border-radius: 10px;
+}
+
+#account-section h5 {
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 5px;
+}
+
+#account-section h2 {
+        font-size: 32px;
+        font-weight: 500;
+}
+
+/* ACCOUNT INPUT SECTION */
+#account-input-section{
+        padding: 10px 0;
+}
+
+#account-input-section .input-wraper {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 85%;
+        margin: auto;
+        grid-column-gap: 30px;
+}
+
+#account-input-section .doposit-input,
+#account-input-section .credit-input {
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px grey;
+}
+
+#account-input-section  h4 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 5px;
+}
+
+#account-input-section input {
+        display: block;
+        width: 100%;
+        padding: 10px 14px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #495057;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        transition: all .3s;
+        box-sizing: border-box;
+}
+
+#account-input-section input::-webkit-outer-spin-button,
+#account-input-section input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+}
+
+#account-input-section input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#account-input-section input:focus {
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+}
+
+#account-input-section button {
+        color: #fff;
+        background-color: #28a745;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 400;
+        border: 1px solid #28a745;
+        padding: 8px 10px;
+        font-size: 16px;
+        border-radius: 3px;
+        transition: all .2s;
+        margin-top: 25px;
+        outline: none;
+}
+
+/* Modal Content */
+#modal-content {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        left: 0%;
+        top: -25%;
+        background-color: red;
+        margin: auto;
+        padding: 15px;
+        border: 1px solid #de0000;
+        width: 95%;
+        color: #FFF;
+        transition: all .7s;
+        font-weight: 500;
+        border-radius: 5px;
+    }
+      
+      /* The Close Button */
+      .close {
+        color: #FFF;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: -10px;
+    }
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }

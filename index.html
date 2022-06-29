@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pioneer Bank</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+        <!-- LOGIN SECTION START -->
+        <section id="login-section">
+           <div class="wraper">
+                   <div class="name-section">
+                           <img src="images/logo.png" alt="Pioneer Logo">
+                        <h1>Welcome to Pioneer Bank</h1>
+                   </div>
+                <div class="form-section" id="form">
+                        <!-- Modal content -->
+                 <div id="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Incorrect Password</p>
+                 </div>
+                        <h3>Login</h3>
+                    <input type="email" name="email" id="email" placeholder="Username">
+                    <input type="password" name="pass" id="pass" placeholder="Password" minlength="8">
+                    <button id="login" onclick="submit()">Login</button>
+                </div>
+          </div>
+        </section>
+        <!-- LOGIN SECTION END -->
+
+        <!-- TRANSECTION SECTION START -->
+        <section id="account-section">
+                <!-- <h1>TRANSECTION MANASMENT SYSTEAM</h1> -->
+                <div class="wraper-two">
+                         <div class="w-30">
+                                <div class="diposit-box">
+                                        <h5>Deposit</h5>
+                                        <h2>$ <span id="balance">00</span></h2>
+                                </div>
+                        </div>
+                        <div class="w-30">
+                                <div class="credit-box">
+                                        <h5>Widhdrow</h5>
+                                        <h2>$ <span id="crbalance">00</span></h2>
+                                </div>
+                        </div>
+                        <div class="w-30">
+                                <div class="total-blns">
+                                        <h5>Total Balance</h5>
+                                        <h2>$ <span id="totalbalance">1240</span></h2>
+                                </div>
+                        </div>
+                 </div>
+
+                <div id="account-input-section">
+                        <div class="input-wraper">
+                                <div class="doposit-input">
+                                        <h4>Diposit</h4>
+                                        <input type="number" id="diposit" placeholder="$ amount you want to deposit">
+                                        <button onclick="dipositmony()">Diposit</button>
+                                </div>
+                                <div class="credit-input">
+                                        <h4>Withdraw</h4>
+                                        <input type="number" id="credit" placeholder="$ amount you want to withdraw">
+                                        <button onclick="creditmony()">Withdraw</button> <br>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <script src="js/custom.js"></script>
+</body>
+</html>
